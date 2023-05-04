@@ -5,6 +5,11 @@ Vue.use(Router)
 
 export const constantRoutes = [
   {
+    path: '/login',
+    component: () => import(/* webpackChunkName:"Login"*/'@/views/login/index.vue'),
+    hidden: true
+  },
+  {
     path: '/404',
     component: () => import(/* webpackChunkName:"Page404" */'@/views/error-page/404.vue'),
     hidden: true
