@@ -21,6 +21,9 @@ export const constantRoutes = [
   }
 ]
 
+// 任意路由：当路径出现错误的时候重定向404
+export const anyRoutes = { path: '*', redirect: '/404', hidden: true }
+
 const createRouter = () => new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
