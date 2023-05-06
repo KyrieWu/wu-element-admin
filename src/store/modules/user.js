@@ -84,11 +84,9 @@ const computedAsyncRoutes = (asyncRoutes, routes) => {
 const actions = {
   // 这里在处理登录业务
   async login ({ commit }, userInfo) {
-    console.log(userInfo)
     // 解构出用户名与密码
     const { username, password } = userInfo
     const result = await login({ username: username.trim(), password: password })
-    console.log(result)
     // 注意：当前登录请求现在使用mock数据，mock数据code是20000
     if (result.code === 20000) {
       // vuex存储token

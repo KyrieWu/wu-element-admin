@@ -1,11 +1,12 @@
 <template>
-  <div >111</div>
+  <div>
+    111
+  </div>
 </template>
 
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Layout'
+  name: 'DashBoard'
 }
 </script>
 
